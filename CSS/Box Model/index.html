@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid black;
+            height: 200px;
+            /* box-sixing: border-box means total height or width of the box will include content height and paddings and borders as well, otherwise, if we donot use box-sizing: border-box, all the height or width defined will only be given to cotent making to total box larger and wider.
+            Note: Margin is not included in both cases as it is outside the box. */
+            box-sizing: border-box; 
+        }
+        /* Margin Collapse: Larger Margin between two margins will be implemented */
+        .box2{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box box1">I am a Box</div>
+    <div class="box box2">I am another Box</div>
+    
+</body>
+</html>
