@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        /* CSS Variables are mainly used to keep consistency in webiste and make repeatitive tasks constant */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --primary-color :   rgb(203, 27, 206);
+            --secondary-color : rgb(144, 144, 194);
+            --border-color : green;
+            --default-padding: 3px;
+        }
+        nav{
+            background-color: var(--primary-color);
+        }
+        ul{
+            display: flex;
+            gap: 30px;
+            padding: var(--default-padding);
+        }
+        ul li{
+            list-style: none;
+            height: 100px;
+            font-size: 80px;
+            border: 2px solid var(--border-color);
+            padding: var(--default-padding);
+        }
+        .container{
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic laborum nemo blanditiis minima maxime sed commodi ducimus, laudantium dolor ratione, ea placeat sunt quidem odit iusto molestiae dignissimos vero! Distinctio impedit libero dolorem totam minima doloremque dolor facere modi excepturi, doloribus voluptatem, in labore nihil. 
+    </div>
+    
+</body>
+</html>
