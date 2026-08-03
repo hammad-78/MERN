@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designing a Nav Bar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --border-color: grey;
+            --nav-bg-color: whitesmoke;
+            --nav-items-bg-color: black;
+            --nav-text-color: white;
+            --upgrade-bg-color: red;
+        }
+        nav{
+            position: fixed;
+            top: 5px;
+            height: 40px;
+            width: 80vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            border: 2px solid var(--border-color);
+            padding: 20px;
+            border-radius: 35px;
+            background-color: var(--nav-bg-color);
+        }
+
+        ul{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        ul li{
+            list-style: none;
+            border: 2px solid var(--border-color);
+            padding: 10px;
+            font-size: 20px ;
+            border-radius: 20px;
+            background-color: var(--nav-items-bg-color);
+            color: var(--nav-text-color);
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Learn</li>
+            <li>Practice</li>
+            <li>Community</li>
+            <li>Certificates</li>
+            <li>Verify</li>
+            <li>Contact Us</li>
+            <li style="background-color: var(--upgrade-bg-color);">Upgrade </li>
+            
+        </ul>
+    </nav>
+</body>
+</html>

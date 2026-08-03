@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design the Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+            background-color: pink;
+            height: 10vh;
+            width: 80vw;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            border-radius: 20px;
+            /* margin-bottom: 10vh; */
+        }
+        header{
+            margin: 50px;
+            padding: 50px;
+            background-color: green;
+            height: 55vh;
+            width: 80vw;
+            display: flex;
+            gap: 10vw;
+        }
+        .boxes{
+            height: 40vh ;
+            width: 30vw;
+            background-color: red;
+           
+        }
+        .floatingActionButton{
+            height: 70px;
+            width: 70px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: fixed;
+            right: 10px;
+            bottom: 25px;
+        }
+        .tagline{
+            height: 50px;
+            width: 60vw;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            margin: 30px;
+            margin-left: 17vw;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+        footer{
+            height: 20vh;
+            width: 80vw;
+            background-color: whitesmoke;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin-left: 10vw;
+            margin-right: 10vw;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <header>
+      <div class="boxes"></div>
+      <div class="boxes"></div>
+    </header>
+    <div class="floatingActionButton"></div>
+    <div class="tagline">Welcome to Sigma Web Development Express</div>
+    <footer></footer>
+</body>
+</html>
