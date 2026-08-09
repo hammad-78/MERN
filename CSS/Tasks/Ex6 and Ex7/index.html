@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultraedit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            height: 15vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80vw;
+            margin: 0 auto;
+            background-color: #f6f6f6;
+            ;
+            border-radius: 10px;
+            border: 1px solid black;
+            flex-wrap: wrap;
+            /* font-family: "Poppins", sans-serif; */
+            margin-bottom: 10vh;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            height: 10vh;
+            width: 10vw;
+            border: none;
+            margin-right: 10px;
+            padding: 15px;
+            font-size: 15px;
+            border-radius: 4px;
+        }
+
+        .download {
+            background-color: yellow;
+            /* border: none; */
+            border-radius: 4px;
+
+        }
+
+        #select_language {
+            background-color: #f6f6f6;
+            border: 1px solid black;
+        }
+
+        .lang_container {
+            /* height: 80vh; */
+            width: 80vw;
+            /* border: 2px solid black; */
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .lang_box {
+            /* height: 200px; */
+            width: 290px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            /* padding: 5px; */
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 30px;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            padding: 23px 0 0 0;
+        }
+
+        .lang_box .heading {
+            font-size: 20px;
+            /* font-family: "Poppins", sans-serif; */
+            font-weight: 600;
+            padding-bottom: 15.75px;
+        }
+
+        .lang_box .lang_download {
+            background-color: rgb(57, 139, 57);
+            height: 25px;
+            padding: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .hash {
+            font-size: 8px;
+            text-align: center;
+            font-weight: 300;
+            padding: 20px;
+        }
+
+        a {
+            all: unset;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 455px) {
+            .lang_container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-logo.svg" alt="Ultraedit Logo">
+        <ul>
+            <li>Products</li>
+            <li>Buy</li>
+            <li>Renew</li>
+            <li>Support</li>
+            <li>Learn</li>
+            <li>Company</li>
+        </ul>
+        <div class="action-buttons">
+
+            <button class="button download">Download</button>
+            <select name="languages" id="select_language" class="button">
+                <option value="apple">English</option>
+                <option value="banana">Urdu</option>
+                <option value="cherry">Arabic</option>
+            </select>
+        </div>
+    </nav>
+
+    <div class="lang_container">
+        <div class="lang_box">
+            <div class="heading">English</div>
+            <a href="ue_64_bit.docx">
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">Urdu</div>
+            <a href="ue_64_bit.docx">
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">Hindi</div>
+            <a href="ue_64_bit.docx">
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">Korean</div>
+            <a href="ue_64_bit.docx">
+
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">French</div>
+            <a href="ue_64_bit.docx">
+
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">Japanese</div>
+            <a href="ue_64_bit.docx">
+
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+        <div class="lang_box">
+            <div class="heading">Arabic</div>
+            <a href="ue_64_bit.docx">
+
+                <div class="lang_download">Download 64-bit</div>
+            </a>
+            <div class="hash">SHA256
+                <br>
+                AA34D57C670C8BCDE76C1F9308EB8BAC11ABC5C08EB2
+                <br>
+                SHA256
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
