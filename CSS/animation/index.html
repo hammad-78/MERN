@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            height: 70vh;
+            width: 90vw;
+            background-color: antiquewhite;
+
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         height: 100px;
+            width: 100px;
+            background-color: blue;
+            border-radius: 10px;
+            animation: moveAndRotate 3s alternate infinite 1s;
+        }
+
+        @keyframes moveAndRotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(125px) rotate(90deg);
+    }
+    50% {
+        transform: translateX(250px) rotate(180deg);
+    }
+    75% {
+        transform: translateX(375px) rotate(270deg);
+    }
+    100% {
+        transform: translateX(500px) rotate(360deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+    
+</body>
+</html>
