@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Animation</title>
+    <style>
+
+        .container{
+            height: 50vh;width: 70vw;
+            background: antiquewhite;
+            position: absolute;
+        }
+        .ball{
+            height: 70px;
+            width: 70px;
+            background: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px ;
+           animation: animateY 1s ease-out infinite alternate,
+                       animateX 5s linear infinite alternate;
+
+            
+        }
+
+        @keyframes animateY {
+            from{
+                bottom:  0;
+            }
+            to{
+                bottom: 150px;
+            }
+        }
+        
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+
+
+        </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>
